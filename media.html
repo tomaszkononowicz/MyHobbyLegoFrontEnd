@@ -1,0 +1,320 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Lego - Moje hobby</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Tomasz Kononowicz" />
+    <meta name="description" content="Strona o moim hobby" />
+    <meta name="keywords" content="Lego, klocki" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="copyright" content="" />
+    <link rel="stylesheet" href="styles/style.css" type="text/css" />
+    <link rel="stylesheet" href="styles/jquery-ui.min.css" type="text/css" />
+
+    <script src="scripts/jquery-1.11.3.js"></script>
+    <script src="scripts/jquery-ui.min.js"></script>
+    <script src="scripts/scriptJS.js"></script>
+    <script src="scripts/scriptJQ.js"></script>
+
+    <script>
+        $(document).ready(function () { startKolor() });
+    </script>
+
+
+</head>
+<body id="bodyId">
+
+    <header>
+        <img src="images/logo.png" alt="Lego" />
+        <div id="opisStrony">Strona poświęcona mojemu hobby - klockom Lego</div>
+    </header>
+
+    <nav id="menu" class=" kolor">
+        <h2 class="mobileNavigation kolor">Nawigacja<span class="expand kolor">&equiv;</span></h2>
+        <ul class="kolor">
+            <li id="nav1" class="kolor"><a href="index.html" class="kolor">Strona główna</a></li>
+            <li id="nav2" class="kolor"><a href="mojeModele.html" class="kolor">Moje modele</a></li>
+            <li id="nav3" class="kolor"><a href="serie.html" class="kolor">Serie</a></li>
+            <li id="nav4" class="kolor">
+                <a href="media.html" class="kolor selected">Media</a>
+                <ul class="submenu kolor">
+                    <li id="nav41" class="kolor"><a href="media.html#filmy" class="kolor">Filmy</a></li>
+                    <li id="nav42" class="kolor"><a href="media.html#gry" class="kolor">Gry</a></li>
+                    <li id="nav43" class="kolor"><a href="media.html#seriale" class="kolor">Seriale</a></li>
+                </ul>
+            </li>
+            <li id="nav5" title=" " class="off kolor">Galeria</li>
+            <li class="kolor"><button type="button" onclick="zmienKolor()" id="zmienKolor" class="kolor">Zmień <br />kolorystykę</button></li>
+        </ul>
+    </nav>
+
+    <div id="container">
+
+
+        <section id="filmy">
+            <h3>Filmy</h3>
+            <table>
+                <tr>
+                    <th>Tytuł USA</th>
+                    <th>Tytuł PL</th>
+                    <th>Premiera USA</th>
+                    <th>Premiera PL</th>
+                    <th>Długość</th>
+                </tr>
+                <tr>
+                    <td>The Lego Movie</td>
+                    <td>LEGO: Przygoda</td>
+                    <td>6.02.2014</td>
+                    <td>7.02.2014</td>
+                    <td>100 minut</td>
+                </tr>
+                <tr>
+                    <td>The Lego Batman Movie</td>
+                    <td></td>
+                    <td>10.02.2017</td>
+                    <td></td>
+                    <td>58 minut</td>
+                </tr>
+                <tr>
+                    <td>Ninjago</td>
+                    <td></td>
+                    <td>22.09.2017</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>The Lego Movie Sequel</td>
+                    <td></td>
+                    <td>18.05.2018</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </section>
+        <section id="gry">
+            <h3>Gry</h3>
+            <table>
+                <tr>
+                    <th>Tytuł</th>
+                    <th>Rok wydania</th>
+                    <th>Platformy</th>
+                </tr>
+                <tr>
+                    <td>Lego Island</td>
+                    <td>1997</td>
+                    <td>PC</td>
+                </tr>
+                <tr>
+                    <td>Lego Loco</td>
+                    <td>1998</td>
+                    <td>PC</td>
+                </tr>
+                <tr>
+                    <td>Lego Racers</td>
+                    <td>1999</td>
+                    <td>PC</td>
+                </tr>
+                <tr>
+                    <td>Lego Rock Raiders</td>
+                    <td>1999</td>
+                    <td>PC</td>
+                </tr>
+                <tr>
+                    <td>Legoland</td>
+                    <td>2000</td>
+                    <td>PC</td>
+                </tr>
+                <tr>
+                    <td>Lego Alpha Team</td>
+                    <td>2000</td>
+                    <td>PC</td>
+                </tr>
+                <tr>
+                    <td>Lego Creator: Knights Kingdom</td>
+                    <td>2000</td>
+                    <td>PC</td>
+                </tr>
+                <tr>
+                    <td>Lego Creator Harry Potter</td>
+                    <td>2001</td>
+                    <td>PC</td>
+                </tr>
+                <tr>
+                    <td>Lego Island 2 The Brickster's Revenge</td>
+                    <td>2001</td>
+                    <td>PC</td>
+                </tr>
+                <tr>
+                    <td>Lego Racers 2</td>
+                    <td>2001</td>
+                    <td>PC</td>
+                </tr>
+                <tr>
+                    <td>Island Xtreme Stunts</td>
+                    <td>2002</td>
+                    <td>PC</td>
+                </tr>
+                <tr>
+                    <td>Lego Creator: Harry Potter and the Chamber of Secrets</td>
+                    <td>2002</td>
+                    <td>PC</td>
+                </tr>
+                <tr>
+                    <td>Bionicle: The Game</td>
+                    <td>2003</td>
+                    <td>PC</td>
+                </tr>
+                <tr>
+                    <td>Lego Star Wars II: The Original Trilogy</td>
+                    <td>2006</td>
+                    <td>PC XBOX360</td>
+                </tr>
+                <tr>
+                    <td>Lego Digital Designer</td>
+                    <td>2007</td>
+                    <td>PC</td>
+                </tr>
+                <tr>
+                    <td>Lego Star Wars: The Complete Saga</td>
+                    <td>2007</td>
+                    <td>PC PS3 XBOX360 </td>
+                </tr>
+                <tr>
+                    <td>Lego Indiana Jones: The Original Adventures</td>
+                    <td>2008</td>
+                    <td>PC PS3 XBOX360</td>
+                </tr>
+                <tr>
+                    <td>Lego Indiana Jones 2: The Adventure Continues</td>
+                    <td>2009</td>
+                    <td>PC PS3 XBOX360</td>
+                </tr>
+                <tr>
+                    <td>Lego Harry Potter: Lata 1–4</td>
+                    <td>2010</td>
+                    <td>PC PS3 XBOX360</td>
+                </tr>
+                <tr>
+                    <td>Lego Universe</td>
+                    <td>2010</td>
+                    <td>PC</td>
+                </tr>
+                <tr>
+                    <td>Lego Harry Potter: Lata 5–7</td>
+                    <td>2011</td>
+                    <td>PC PS3 XBOX360</td>
+                </tr>
+                <tr>
+                    <td>Lego Piraci z Karaibów</td>
+                    <td>2011</td>
+                    <td>PC PS3 XBOX360</td>
+                </tr>
+                <tr>
+                    <td>Lego Star Wars III: The Clone Wars</td>
+                    <td>2011</td>
+                    <td>PC PS3 XBOX360</td>
+                </tr>
+                <tr>
+                    <td>Lego Batman 2: DC Super Heroes</td>
+                    <td>2012</td>
+                    <td>PC PS3 XBOX360</td>
+                </tr>
+                <tr>
+                    <td>Lego The Lord of the Rings: Władca Pierścieni</td>
+                    <td>2012</td>
+                    <td>PC PS3 XBOX360</td>
+                </tr>
+                <tr>
+                    <td>Lego Marvel Super Heroes</td>
+                    <td>2013</td>
+                    <td>PC  PS3 PS4 XBOX360 XBOXONE</td>
+                </tr>
+                <tr>
+                    <td>Lego Batman 3: Poza Gotham</td>
+                    <td>2014</td>
+                    <td>PC  PS3 PS4 XBOX360 XBOXONE</td>
+                </tr>
+                <tr>
+                    <td>Lego The Hobbit</td>
+                    <td>2014</td>
+                    <td>PC  PS3 PS4 XBOX360 XBOXONE</td>
+                </tr>
+                <tr>
+                    <td>Lego Przygoda gra wideo</td>
+                    <td>2014</td>
+                    <td>PC  PS3 PS4 XBOX360 XBOXONE</td>
+                </tr>
+                <tr>
+                    <td>Lego Jurassic World</td>
+                    <td>2015</td>
+                    <td>PC  PS3 PS4 XBOX360 XBOXONE</td>
+                </tr>
+
+            </table>
+
+        </section>
+        <section id="seriale">
+            <h3>Seriale</h3>
+            <table>
+                <tr>
+                    <th>Tytuł USA</th>
+                    <th>Tytuł PL</th>
+                    <th>Premiera USA</th>
+                    <th>Premiera PL</th>
+                </tr>
+                <tr>
+                    <td>Lego Star Wars: The Yoda Chronicles</td>
+                    <td>Lego Star Wars: Kroniki Yody</td>
+                    <td>29.05.2013</td>
+                    <td>22.09.2013</td>
+                </tr>
+                <tr>
+                    <td>Lego: Hero Factory</td>
+                    <td>Lego: Fabryka bohaterów</td>
+                    <td>10.09.2010</td>
+                    <td>14.05.2011</td>
+                </tr>
+                <tr>
+                    <td>Legends of Cima</td>
+                    <td>Legendy Chima</td>
+                    <td>16.02.2013</td>
+                    <td>11.05.2013</td>
+                </tr>
+                <tr>
+                    <td>Lego Ninjago: Masters of Spinjitzu</td>
+                    <td>Ninjago: Mistrzowie Spinjitzu</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Lego Friends of Heartlake City</td>
+                    <td>Lego Friends</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Mixels</td>
+                    <td>Mixele</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+            </table>
+        </section>
+
+    </div>
+
+
+
+    <footer id="footerId">
+        Projekt i wykonianie: Tomasz Kononowicz
+        <br>
+        <small>© Copyright listopad 2015 Proszę nie kopiować <span onclick="zamknijStopke()">[Zamknij stopkę]</span></small>
+    </footer>
+
+</body>
+
+
+
+</html>

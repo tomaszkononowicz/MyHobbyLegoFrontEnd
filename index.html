@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Lego - Moje hobby</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Tomasz Kononowicz" />
+    <meta name="description" content="Strona o moim hobby" />
+    <meta name="keywords" content="Lego, klocki" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="copyright" content="" />
+    <link rel="stylesheet" href="styles/style.css" type="text/css" />
+    <link rel="stylesheet" href="styles/jquery-ui.min.css" type="text/css" />
+
+    <script src="scripts/jquery-1.11.3.js"></script>
+    <script src="scripts/jquery-ui.min.js"></script>
+    <script src="scripts/scriptJS.js"></script>
+    <script src="scripts/scriptJQ.js"></script>
+
+    <script>
+        $(document).ready(function () { startKolor() });
+
+        $(document).ready(function(){
+
+            $witam = (localStorage.getItem("powitanie"));
+            console.log($witam);
+            if ($witam == "bylo") {
+                $("#dialog").remove();
+            } else {
+                localStorage.setItem("powitanie", "bylo");
+
+                $("#dialog").dialog({
+                    hide: { effect: "scale", duration: 500 },
+                    dialogClass: 'no-close',
+                    buttons: [
+                    {
+                        text: "OK",
+                        click: function () {
+                            $(this).dialog("close");
+                        }
+                    }
+                    ],
+                    width: 480,
+                    resizable: false,
+                    draggable: false,
+                    title: "Witaj pierwszy raz na stronie"
+                });
+            }
+        });
+
+    </script>
+
+
+</head>
+<body id="bodyId">
+
+    <div id="dialog">Witaj na mojej stronie przygotowanej na przedmiot Wytwarzanie Aplikacji Internetowych! To okno pokazuje się tylko raz na danym urządzeniu - wykorzystuje localStorage oraz JQueryUI.</div>
+
+    <header>
+        <img src="images/logo.png" alt="Lego" />
+        <div id="opisStrony">Strona poświęcona mojemu hobby - klockom Lego</div>
+    </header>
+
+    <nav id="menu" class=" kolor">
+        <h2 class="mobileNavigation kolor">Nawigacja<span class="expand kolor">&equiv;</span></h2>
+        <ul class="kolor">
+            <li id="nav1" class="kolor"><a href="index.html" class="kolor selected">Strona główna</a></li>
+            <li id="nav2" class="kolor"><a href="mojeModele.html" class="kolor">Moje modele</a></li>
+            <li id="nav3" class="kolor"><a href="serie.html" class="kolor">Serie</a></li>
+            <li id="nav4" class="kolor">
+                <a href="media.html" class="kolor">Media</a>
+                <ul class="submenu kolor">
+                    <li id="nav41" class="kolor"><a href="media.html#filmy" class="kolor">Filmy</a></li>
+                    <li id="nav42" class="kolor"><a href="media.html#gry" class="kolor">Gry</a></li>
+                    <li id="nav43" class="kolor"><a href="media.html#seriale" class="kolor">Seriale</a></li>
+                </ul>
+            </li>
+            <li id="nav5" title="" class="off kolor">Galeria</li>
+            <li class="kolor"><button type="button" onclick="zmienKolor()" id="zmienKolor" class="kolor">Zmień <br />kolorystykę</button></li>
+        </ul>
+    </nav>
+
+    
+
+    <div id="container">
+
+        <section>
+            <h3>Informacje ogólne</h3>
+            <p>Lego – przedsiębiorstwo zabawkarskie, na początku zajmowało się produkcją drewnianych zabawek. Dziś firma znana z produkcji klocków.</p>
+        </section>
+
+        <section>
+            <h3>Historia</h3>
+            <p>Nazwę Lego przedsiębiorstwo przyjęło w 1934 r. Jest to skrót od duńskiego „Leg godt” (baw się dobrze), a po łacinie „Lego” znaczy „składam”.</p>
+            <p>W 1947 przedsiębiorstwo Lego zaczęło produkować zabawki z tworzywa sztucznego. Wielki światowy sukces przyniosły przedsiębiorstwu klocki – cegiełki składane razem za pomocą systemu wypustek i odpowiadających im gniazd, pozwalające na uzyskiwanie wielu możliwych kombinacji połączeń. Pierwszy rodzaj klocków wyprodukowany został w 1949 roku, w ciągu następnych lat przedsiębiorstwo stopniowo poszerzało asortyment. Sposób łączenia klocków został opatentowany 28 stycznia 1958. Począwszy od lat 60. XX w., zestawy klocków Lego umożliwiają budowę miast z modelami między innymi: domów, samochodów, zawierały także figurki mieszkańców. W 1975 roku w zestawach pojawiły się pierwsze proste minifigurki (ludziki Lego), a obecną formę minifigurek z ruchomymi częściami ciała przybrały od 1978 roku. Asortyment produkowanych zabawek wciąż się powiększa, obejmując produkty przeznaczone dla różnych grup wiekowych.</p>
+        </section>
+
+        <section>
+            <h3>Kalendarium</h3>
+            <ul id="kalendarium">
+                <li><strong>1958:</strong> Po śmierci założyciela, dyrektorem przedsiębiorstwa został jego syn, Godtfred Kirk Christiansen.</li>
+                <li><strong>1968:</strong> Powstał pierwszy park rozrywki przedsiębiorstwa Legoland w Billund, a później następne (obecnie Lego to największy europejski i jeden z największych i najbardziej znanych producentów zabawek na świecie).</li>
+                <li><strong>1978:</strong> Pojawiły się charakterystyczne ruchome minifigurki – ludziki Lego.</li>
+                <li><strong>1986:</strong> Godfred Kirk Christiansen zrezygnował z funkcji prezesa zarządu, stanowisko to przejął Kjeld Kirk Kristiansen – wnuk założyciela przedsiębiorstwa.</li>
+                <li><strong>2008:</strong> Europejski Sąd Pierwszej Instancji odebrał przedsiębiorstwu Lego wyłączność na kształt ich klocków.</li>
+                <li><strong>2009:</strong> Pomimo światowego kryzysu gospodarczego przedsiębiorstwo odnotowało 22% wzrost sprzedaży oraz 63% wzrost zysków.</li>
+            </ul>
+        </section>
+
+
+    </div>
+
+
+
+    <footer id="footerId">
+        Projekt i wykonianie: Tomasz Kononowicz
+        <br>
+        <small>© Copyright listopad 2015 Proszę nie kopiować <span onclick="zamknijStopke()">[Zamknij stopkę]</span></small>
+    </footer>
+
+</body>
+
+
+
+</html>
